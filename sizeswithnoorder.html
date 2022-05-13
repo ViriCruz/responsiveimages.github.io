@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing sizes attribute</title>
+</head>
+<body> 
+  <div class="container">
+    <h2 class="title">Three layout column with wrong order of sizes attr</h2>
+    <div class="images with-layout">
+      <div class="img-container">
+        <img src="375x360.jpg" srcset="
+          375x360.jpg 375w,
+          768x360.jpg 768w,
+          1920x1080.jpg 1920w,
+          2560x1920.jpg 2560w
+        " 
+        sizes="(max-width: 1024px)50vw, (max-width: 767px) 95vw, 33vw">
+      </div>
+      <div class="img-container">
+        <img src="375x360.jpg" srcset="
+          375x360.jpg 375w,
+          768x360.jpg 768w,
+          1920x1080.jpg 1920w,
+          2560x1920.jpg 2560w
+        "
+        sizes="(max-width: 1024px)50vw, (max-width: 767px) 95vw, 33vw">
+      </div>
+      <div class="img-container">
+        <img src="375x360.jpg" srcset="
+          375x360.jpg 375w,
+          768x360.jpg 768w,
+          1920x1080.jpg 1920w,
+          2560x1920.jpg 2560w
+        "
+        sizes="(max-width: 1024px)50vw, (max-width: 767px) 95vw, 33vw">
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
